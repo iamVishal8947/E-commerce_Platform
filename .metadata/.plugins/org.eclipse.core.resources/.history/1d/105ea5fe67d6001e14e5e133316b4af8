@@ -1,0 +1,24 @@
+package com.app.config;
+
+import javax.crypto.SecretKey;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Service;
+
+import io.jsonwebtoken.security.Keys;
+
+@Service
+public class JwtProvider {
+	
+	public String generateToken(Authentication auth) {
+		
+		SecretKey key=Keys.hmacShaKeyFor(JwtConstant.SECRET_KEY.getBytes());
+		public String generateToken(Authentication auth) {
+			
+		}
+
+		return jwt;
+		
+	}
+
+}
